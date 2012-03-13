@@ -144,7 +144,7 @@ void draw() {
     }
 
     if ((closestTargetPosition != null) && (closestBoidDist > minScope) && (closestBoidDist < maxScope)) {
-      println("Boid " + n + " pursuing " + closestTargetPosition.x + ", " + closestTargetPosition.y + " at distance of " + closestBoidDist); 
+      //println("Boid " + n + " pursuing " + closestTargetPosition.x + ", " + closestTargetPosition.y + " at distance of " + closestBoidDist); 
       wanderBoid.timeCount = 0;
       
       if (shouldEvade)
@@ -275,7 +275,7 @@ void refreshCanvas() {
 }
 
 void mousePressed() {
-  println(mouseX + " " + mouseY);
+  //println(mouseX + " " + mouseY);
   hitPixels = new PVector(mouseX, mouseY);
   press = true;
   pressTime = millis();
